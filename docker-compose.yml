@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    # entrypoint: ../bin/docker-entrypoint.sh
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - ACCESS_KEY
+      - SECRET_BASE
