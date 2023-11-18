@@ -129,3 +129,5 @@ curl --location --request DELETE 'http://127.0.0.1:3000/geolocation/delete' \
 curl --location 'http://127.0.0.1:3000/geolocation/retrieve?ip=134.201.250.157' \
 --header 'Authorization: <your-authorization-token>'
 ```
+
+Note: When using Docker, the application is accessible at the address 0.0.0.0:3000 instead of the default 127.0.0.1:3000.
